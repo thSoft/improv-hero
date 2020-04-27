@@ -1,0 +1,38 @@
+audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    border-bottom: solid black 1px;
+    border-top: solid black 1px;
+}
+
+.sticky > img {
+    margin: 0.1em auto 0.5em auto !important;
+}
+
+.small > img {
+    width: 75%;
+}
+
+.tiny > img {
+    width: 50%;
+}
+
+.expand-content {
+    padding-left: 0.86em;
+}
+
+.expand {
+    padding-left: 0.86em;
+}
+
+.youtube {
+    text-align: center;
+}

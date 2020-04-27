@@ -1,0 +1,31 @@
+baseURL = "/"
+canonifyURLs = true
+
+ignoreFiles = [ "\\.mscz$", "\\.mscz,$" ]
+
+languageCode = "hu-HU"
+defaultContentLanguage = "hu"
+
+theme = "hugo-theme-learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+author = "Harmath Dénes"
+showVisitedLinks = true
+disableBreadcrumb = false
+disableNextPrev = false
+disableToc = true
+themeVariant = "blue"
+
+[outputs]
+home = ["HTML", "JSON"]
+
+[Languages]
+[Languages.hu]
+title = "Szólalj meg bátran a zene nyelvén!"
+weight = 1
+languageName = "Magyar"

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mscore=/Applications/MuseScore\ 3.app/Contents/MacOS/mscore
+basename=${1%.*}
+"$mscore" -o "$basename.png" --trim-image 0 "$1"
+audioExtension=mp3
+audioFile="$basename.$audioExtension"
+"$mscore" -o "$audioFile" "$1"
+tempFile="temp.$audioExtension"
+sox "$audioFile" "$tempFile" reverse silence 1 00:00:01 -54d reverse
+mv "$tempFile" "$audioFile"

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+fswatch -0 content -e ".*" -i "\\.mscz$" --event OwnerModified | xargs -0 -n 1 -I {} ./render {} &
+hugo serve --noHTTPCache
+trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT

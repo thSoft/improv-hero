@@ -1,0 +1,2 @@
+<div{{ if .Get "class" }} class="{{ .Get "class" }}"{{ end }}><img src="{{ .Get "src" }}-1.png" /></div>
+<div>{{ if .Get "audio" | ne "false" }}<audio src="{{ .Get "src" }}.mp3" controls />{{ end }}</div>

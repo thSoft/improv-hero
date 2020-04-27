@@ -1,0 +1,6 @@
+#!/bin/bash
+
+targetDir=public
+rm -rf $targetDir
+hugo
+surge $targetDir improv-hero.surge.sh
